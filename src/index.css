@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lora", serif;
+  }
+
+.index__accueil {
+
+    width: 100%;
+}
+
+.index__accueil-img-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.index__accueil-img-title>img {
+    position: relative;
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+}
+
+.index__accueil-restaurant-name {
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 3em;
+    color: white;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.index__accueil-flex-presentation1,
+.index__accueil-flex-presentation2 {
+    display: flex;
+    margin-top: 62px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 62px;
+}
+
+.index__accueil-text-presentation2 {
+    order: 2;
+}
+
+.index__accueil-text-presentation1,
+.index__accueil-text-presentation2 {
+    display: flex;
+    align-items: center;
+    background-color: #D0CDC2;
+    text-align: center;
+}
+
+.index__accueil-text-presentation1>p,
+.index__accueil-text-presentation2>p {
+    padding: 0px 30px;
+    font-size: 1.5rem;
+}
+
+.index__accueil-text-presentation1,
+.index__accueil-text-presentation2,
+.index__accueil-img-presentation2,
+.index__accueil-img-presentation1
+{
+    width: 40%;
+}
+
+.index__accueil-text-presentation1,
+.index__accueil-text-presentation2,
+.index__accueil-img-presentation2>img,
+.index__accueil-img-presentation1>img {
+    height: 250px;
+    border-radius: 20px;
+}
+.index__accueil-img-presentation2>img,
+.index__accueil-img-presentation1>img
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+.index__accueil-img-plats {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 62px;
+}
+.index__accueil-img-plat1,
+.index__accueil-img-plat2,
+.index__accueil-img-plat3
+{
+    width: 30%;
+}
+
+.index__accueil-img-plat1>img,
+.index__accueil-img-plat2>img,
+.index__accueil-img-plat3>img {
+    width: 100%;
+    height: 282px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.index__accueil-infos
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 80px;
+    background-color: #a9b19d;
+    height: 200px;
+}
+.index__accueil-infos-icons
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    margin-bottom: -15px;
+}
+
+.index__accueil-infos-texts
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    height: 50%;
+}
+.index__accueil-infos-texts > div 
+{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 18%;
+    justify-content: center;
+
+    text-align: center;
+}
+.index__accueil-map-adress
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.index__accueil-map
+{
+    width: 40%;
+}
+
+.index__accueil-map-adress
+{
+    margin-top: 80px;
+
+}
+.index__accueil-map > iframe
+{
+    width: 100%;
+}
+.index__accueil-adress
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color:#735e5d;
+    height: 328.5px;
+    color: white;
+}
+.index__accueil-adress > h2
+{
+    font-size: 3.5rem;
+}
+.index__accueil-adress > p
+{
+    font-size: 1.2rem;
+}
+.index__accueil-adress-icons
+{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 30%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.index__accueil-adress-icons > a{
+    text-decoration: none;
+    color: #5e7fc7;
+}
+.index__accueil-adress-icons-tripadvisor
+{
+    height: 50px;
+}
+
+
+
+@media (max-width: 1100px) {
+    .index__accueil-flex-presentation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .index__accueil-flex-presentation1,
+    .index__accueil-flex-presentation2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0px;
+        width: 90%;
+    }
+
+    .index__accueil-flex-presentation2 {
+        margin-top: 20px;
+    }
+
+    .index__accueil-text-presentation2 {
+        order: 0;
+    }
+
+    .index__accueil-text-presentation1,
+    .index__accueil-text-presentation2 {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+    }
+
+    .index__accueil-img-presentation1,
+    .index__accueil-img-presentation2 {
+        width: 100%;
+    }
+
+
+    .index__accueil-img-presentation1>img,
+    .index__accueil-img-presentation2>img {
+        object-fit: cover;
+        border-radius: 0 0 20px 20px;
+        width: 100%;
+    }
+
+    .index__accueil-img-plats {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .index__accueil-adress-icons
+    {
+        width:40%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .index__accueil-img-title {
+        margin-bottom: -4px;
+    }
+
+
+    .index__accueil-flex-presentation2,
+    .index__accueil-img-presentation1>img {
+        display: none;
+    }
+
+    .index__accueil-flex-presentation1 {
+        display: block;
+        margin-top: 0px;
+    }
+
+    .index__accueil-text-presentation1 {
+        border-radius: 0px;
+
+    }
+
+    .index__accueil-flex-presentation1,
+    .index__accueil-text-presentation1 {
+
+        width: 100%;
+    }
+    .index__accueil-img-plat1,
+    .index__accueil-img-plat2
+    {
+        width: 50%;
+
+    }
+    .index__accueil-img-plat1>img,
+    .index__accueil-img-plat2>img{
+        border-radius: 0px;
+    }
+    .index__accueil-img-plat3
+    {
+        display: none;
+    }
+    .index__accueil-img-plats
+    {
+        margin-top: 0px;
+    }
+    .index__accueil-infos
+    {
+        margin-top: -5px;
+    }
+    .index__accueil-map-adress
+    {
+        flex-flow: column nowrap;
+        margin-top: 0px;
+        width: 100%;
+    }
+    .index__accueil-map, .index__accueil-adress
+    {
+        width: 100%;
+    }
+    .index__accueil-map
+    {
+        margin-bottom: -5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .index__accueil-restaurant-name {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .index__accueil-infos
+    {
+        display: none;
+    }
+}
